@@ -1,8 +1,7 @@
-import { Dashboard, SidebarMenu, Organization, Topbar } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material"; // reset all default css
 import { ColorModeContext, useMode } from "./styles/theme";
-import React from "react";
+import { Dashboard, Organization, SidebarMenu, Topbar } from "./pages";
 
 const App = () => {
   const [theme, coloMode] = useMode();
