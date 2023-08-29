@@ -10,7 +10,7 @@ interface ProgressCircleProps {
 const ProgressCircle: React.FC<ProgressCircleProps> = ({ progress = "0.75", size = "40" }) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
-    const angle = parseFloat(progress) * 360; // Convert progress to a number
+    const angle = parseFloat(progress) * 360;
     
     return (
         <Box
